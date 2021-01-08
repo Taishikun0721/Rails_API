@@ -13,11 +13,8 @@
 #
 #  index_users_on_email  (email) UNIQUE
 #
-FactoryBot.define do
-  factory :user do
-    name { Faker::Name.name }
-    email { Faker::Internet.unique.email }
-    password { '12345678' }
-    password_confirmation { '12345678' }
-  end
+require 'rails_helper'
+
+RSpec.describe User, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
 end
